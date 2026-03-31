@@ -14,17 +14,16 @@ QnAApp
 │   │   │
 │   │   ├── Answer
 │   │   │   └── _AnswerPartial.cshtml
+            ├── Edit.cshtml    
 │   │   │
 │   │   ├── Comment
 │   │   │   └── _CommentPartial.cshtml
+            ├── Edit.cshtml
 │   │   │
 │   │   └── Shared
 │   │       └── _Layout.cshtml
 │   │
-│   ├── ViewModels
-│   │   ├── QuestionVM.cs
-│   │   ├── AnswerVM.cs
-│   │   └── CommentVM.cs
+│
 │   │
 │   ├── Extensions
 │   │   └── ServiceExtensions.cs
