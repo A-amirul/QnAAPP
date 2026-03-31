@@ -1,0 +1,11 @@
+D:\QnAApp\QnAApp.Domain\bin\Debug\net10.0\QnAApp.Domain.deps.json
+D:\QnAApp\QnAApp.Domain\bin\Debug\net10.0\QnAApp.Domain.dll
+D:\QnAApp\QnAApp.Domain\bin\Debug\net10.0\QnAApp.Domain.pdb
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.AssemblyInfoInputs.cache
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.AssemblyInfo.cs
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.csproj.CoreCompileInputs.cache
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.dll
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\refint\QnAApp.Domain.dll
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.pdb
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\ref\QnAApp.Domain.dll

@@ -1,0 +1,19 @@
+@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Ask Question";
+}
+<h1>Ask a Question</h1>
+<form method="post">
+    <div>
+        <label asp-for="Question.Title"></label>
+        <input asp-for="Question.Title" />
+        <span asp-validation-for="Question.Title"></span>
+    </div>
+    <div>
+        <label asp-for="Question.Body"></label>
+        <textarea asp-for="Question.Body"></textarea>
+        <span asp-validation-for="Question.Body"></span>
+    </div>
+    <button type="submit">Submit</button>
+</form>

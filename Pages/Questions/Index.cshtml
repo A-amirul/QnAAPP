@@ -1,0 +1,16 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Questions";
+}
+<h1>Questions</h1>
+<a asp-page="Create">Ask Question</a>
+<ul>
+@foreach (var q in Model.Questions)
+{
+    <li>
+        <a asp-page="Details" asp-route-id="@q.Id">@q.Title</a> by @q.User?.UserName
+        <span>(@q.Answers.Count answers)</span>
+    </li>
+}
+</ul>

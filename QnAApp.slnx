@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="QnAApp.API/QnAApp.API.csproj" />
+  <Project Path="QnAApp.Application/QnAApp.Application.csproj" />
+  <Project Path="QnAApp.Domain/QnAApp.Domain.csproj" />
+  <Project Path="QnAApp.Infrastructure/QnAApp.Infrastructure.csproj" />
+</Solution>

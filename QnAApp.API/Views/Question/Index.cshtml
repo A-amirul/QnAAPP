@@ -1,0 +1,46 @@
+﻿@model List<QnAApp.Domain.Entities.Question>
+
+<h1>QnA System</h1>
+
+<a href="/Question/Create">➕ Ask Question</a>
+
+<hr />
+
+@foreach (var q in Model)
+{
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+        <h3>@q.Title</h3>
+        <p>@q.Description</p>
+
+        <a href="/Question/Edit/@q.Id">Edit</a> |
+        <a href="/Question/Delete/@q.Id">Delete</a>
+
+        <hr />
+
+        <h4>Answers</h4>
+
+        <form method="post" action="/Answer/Create">
+            <input type="hidden" name="QuestionId" value="@q.Id" />
+            <input name="Content" placeholder="Write answer..." />
+            <button type="submit">Post</button>
+        </form>
+
+        @foreach (var a in q.Answers)
+        {
+            <div style="margin-left:20px;">
+                <p>👉 @a.Content</p>
+
+                <form method="post" action="/Comment/Create">
+                    <input type="hidden" name="AnswerId" value="@a.Id" />
+                    <input name="Content" placeholder="Comment..." />
+                    <button type="submit">Comment</button>
+                </form>
+
+                @foreach (var c in a.Comments)
+                {
+                    <p style="margin-left:20px;">💬 @c.Content</p>
+                }
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,15 @@
+D:\QnAApp\QnAApp.Application\bin\Debug\net10.0\QnAApp.Application.deps.json
+D:\QnAApp\QnAApp.Application\bin\Debug\net10.0\QnAApp.Application.dll
+D:\QnAApp\QnAApp.Application\bin\Debug\net10.0\QnAApp.Application.pdb
+D:\QnAApp\QnAApp.Application\bin\Debug\net10.0\QnAApp.Domain.dll
+D:\QnAApp\QnAApp.Application\bin\Debug\net10.0\QnAApp.Domain.pdb
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.csproj.AssemblyReference.cache
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.AssemblyInfoInputs.cache
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.AssemblyInfo.cs
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.csproj.CoreCompileInputs.cache
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.A.59ABF7F1.Up2Date
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.dll
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\refint\QnAApp.Application.dll
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.pdb
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\ref\QnAApp.Application.dll

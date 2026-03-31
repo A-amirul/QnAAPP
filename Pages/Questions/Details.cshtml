@@ -1,0 +1,81 @@
+@page "{id:int}"
+@model DetailsModel
+@{
+    ViewData["Title"] = Model.Question.Title;
+}
+<h1>@Model.Question.Title</h1>
+<p>@Model.Question.Body</p>
+<p>Asked by @Model.Question.User?.UserName</p>
+
+@if (Model.CurrentUserId == Model.Question.UserId)
+{
+    <form method="post" asp-page-handler="Delete" asp-route-id="@Model.Question.Id">
+        <button type="submit">Delete Question</button>
+    </form>
+}
+
+<h2>Comments</h2>
+<ul>
+@foreach (var c in Model.Question.Comments)
+{
+    <li>@c.Body by @c.User?.UserName
+        @if (Model.CurrentUserId == c.UserId)
+        {
+            <!-- Add delete/edit logic here -->
+        }
+    </li>
+}
+</ul>
+<form method="post" asp-page-handler="Comment" asp-route-id="@Model.Question.Id">
+    <textarea asp-for="NewComment.Body"></textarea>
+    <button type="submit">Add Comment</button>
+</form>
+
+<h2>Answers</h2>
+<ul>
+@foreach (var a in Model.Question.Answers)
+{
+    <li>
+        @a.Body by @a.User?.UserName
+        @if (Model.Question.AcceptedAnswerId == a.Id)
+        {
+            <strong>(Accepted)</strong>
+        }
+        @if (Model.CurrentUserId == Model.Question.UserId && Model.Question.AcceptedAnswerId != a.Id)
+        {
+            <form method="post" asp-page-handler="Accept" asp-route-id="@Model.Question.Id" asp-route-answerId="@a.Id">
+                <button type="submit">Accept</button>
+            </form>
+        }
+        @if (Model.CurrentUserId == a.UserId)
+        {
+            <!-- Add edit/delete logic here -->
+        }
+    </li>
+}
+</ul>
+<form method="post" asp-page-handler="Answer" asp-route-id="@Model.Question.Id">
+    <textarea asp-for="NewAnswer.Body"></textarea>
+    <button type="submit">Add Answer</button>
+</form>
+```
+
+---
+
+### Migrations & Database
+
+- Open the __Package Manager Console__.
+- Run:
+  - `Add-Migration InitialCreate`
+  - `Update-Database`
+
+---
+
+This structure covers:
+- Minimal .NET 10 Razor Pages setup
+- MSSQL/EF Core integration
+- CRUD for questions, answers, comments
+- Accepting answers
+- User ownership checks for edit/delete
+
+Let me know if you need more pages (edit, delete for answers/comments), Identity scaffolding, or further customization!
