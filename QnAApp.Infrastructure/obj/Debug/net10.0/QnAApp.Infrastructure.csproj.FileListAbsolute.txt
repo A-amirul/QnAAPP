@@ -11,6 +11,7 @@ D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.Generate
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.AssemblyInfoInputs.cache
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.AssemblyInfo.cs
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.csproj.CoreCompileInputs.cache
+D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.sourcelink.json
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.I.AD45184A.Up2Date
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\QnAApp.Infrastructure.dll
 D:\QnAApp\QnAApp.Infrastructure\obj\Debug\net10.0\refint\QnAApp.Infrastructure.dll

@@ -19,6 +19,18 @@ public class CommentRepository : ICommentRepository
         await _db.SaveChangesAsync();
     }
 
+    public async Task<Comment?> GetByIdAsync(int id)
+    {
+        return await _db.Comments.FindAsync(id);
+    }
+
+    public async Task UpdateAsync(Comment c)
+    {
+        c.UpdatedAt = DateTime.Now;
+        _db.Comments.Update(c);
+        await _db.SaveChangesAsync();
+    }
+
     public async Task DeleteAsync(int id)
     {
         var data = await _db.Comments.FindAsync(id);

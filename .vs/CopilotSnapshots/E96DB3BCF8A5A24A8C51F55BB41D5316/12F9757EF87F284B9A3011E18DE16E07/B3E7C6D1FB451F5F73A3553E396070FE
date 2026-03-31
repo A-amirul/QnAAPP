@@ -1,0 +1,14 @@
+﻿@model QnAApp.Domain.Entities.Comment
+
+<div style="margin-left:20px;">
+    💬 @c.Content
+
+    <br />
+    <small>
+        @c.CreatedAt.ToString("dd MMM yyyy hh:mm tt")
+        @if (c.UpdatedAt != null)
+        {
+            <span>| Edited: @c.UpdatedAt.Value.ToString("dd MMM yyyy hh:mm tt")</span>
+        }
+    </small>
+</div>

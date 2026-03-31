@@ -2,8 +2,6 @@
 using QnAApp.Application.Interfaces;
 using QnAApp.Domain.Entities;
 
-namespace QnAApp.API.Controllers;
-
 public class CommentController : Controller
 {
     private readonly ICommentRepository _repo;
@@ -16,7 +14,21 @@ public class CommentController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(Comment c)
     {
+        c.CreatedAt = DateTime.Now;
         await _repo.AddAsync(c);
+        return RedirectToAction("Index", "Question");
+    }
+
+    public async Task<IActionResult> Edit(int id)
+    {
+        var data = await _repo.GetByIdAsync(id);
+        return View(data);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(Comment c)
+    {
+        await _repo.UpdateAsync(c);
         return RedirectToAction("Index", "Question");
     }
 

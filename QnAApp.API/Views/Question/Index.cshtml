@@ -11,24 +11,47 @@
     <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
         <h3>@q.Title</h3>
         <p>@q.Description</p>
+        <br />
+        <small>
+            Posted: @q.CreatedAt.ToString("dd MMM yyyy hh:mm tt")
+            @if (q.UpdatedAt != null)
+            {
+                <span>| Edited: @q.UpdatedAt.Value.ToString("dd MMM yyyy hh:mm tt")</span>
+            }
+        </small>
 
         <a href="/Question/Edit/@q.Id">Edit</a> |
         <a href="/Question/Delete/@q.Id">Delete</a>
-
+        <br />
         <hr />
 
-        <h4>Answers</h4>
+        <h4 >Answers</h4>
 
         <form method="post" action="/Answer/Create">
             <input type="hidden" name="QuestionId" value="@q.Id" />
             <input name="Content" placeholder="Write answer..." />
             <button type="submit">Post</button>
-        </form>
+        </form> 
 
         @foreach (var a in q.Answers)
         {
             <div style="margin-left:20px;">
                 <p>👉 @a.Content</p>
+                <br />
+                <small>
+                    @if (a.CreatedAt != default)
+                    {
+                        <span>Answered: @a.CreatedAt.ToString("dd MMM yyyy hh:mm tt")</span>
+                    }
+
+                    @if (a.UpdatedAt != null)
+                    {
+                        <span> | Edited: @a.UpdatedAt.Value.ToString("dd MMM yyyy hh:mm tt")</span>
+                    }
+                </small>
+                <a href="/Answer/Edit/@a.Id">Edit</a>
+                <a href="/Answer/Delete/@a.Id">Delete</a>
+                <br />
 
                 <form method="post" action="/Comment/Create">
                     <input type="hidden" name="AnswerId" value="@a.Id" />
@@ -38,7 +61,24 @@
 
                 @foreach (var c in a.Comments)
                 {
-                    <p style="margin-left:20px;">💬 @c.Content</p>
+                    <div style="margin-left:20px;">
+                        💬 @c.Content
+                        <br />
+                        <small>
+                            @if (c.CreatedAt != default)
+                            {
+                                <span>@c.CreatedAt.ToString("dd MMM yyyy hh:mm tt")</span>
+                            }
+
+                            @if (c.UpdatedAt != null)
+                            {
+                                <span> | Edited: @c.UpdatedAt.Value.ToString("dd MMM yyyy hh:mm tt")</span>
+                            }
+                        </small>
+                        <a href="/Comment/Edit/@c.Id">Edit</a>
+                        <a href="/Comment/Delete/@c.Id">Delete</a>
+                        <br />
+                    </div>
                 }
             </div>
         }

@@ -15,11 +15,20 @@ public class QuestionRepository : QnAApp.Application.Interfaces.IQuestionReposit
     }
 
     public async Task<List<Question>> GetAllAsync()
-        => await _db.Questions.Include(x => x.Answers).ToListAsync();
+    {
+        return await _db.Questions
+            .Include(q => q.Answers)
+                .ThenInclude(a => a.Comments)
+            .ToListAsync();
+    }
 
     public async Task<Question?> GetByIdAsync(int id)
-        => await _db.Questions.Include(x => x.Answers)
-                              .FirstOrDefaultAsync(x => x.Id == id);
+    {
+        return await _db.Questions
+            .Include(q => q.Answers)
+                .ThenInclude(a => a.Comments)
+            .FirstOrDefaultAsync(q => q.Id == id);
+    }
 
     public async Task AddAsync(Question q)
     {

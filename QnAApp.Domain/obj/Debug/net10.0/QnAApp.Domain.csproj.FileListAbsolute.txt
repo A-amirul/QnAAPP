@@ -5,6 +5,7 @@ D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.GeneratedMSBuildEditorCo
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.AssemblyInfoInputs.cache
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.AssemblyInfo.cs
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.csproj.CoreCompileInputs.cache
+D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.sourcelink.json
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.dll
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\refint\QnAApp.Domain.dll
 D:\QnAApp\QnAApp.Domain\obj\Debug\net10.0\QnAApp.Domain.pdb

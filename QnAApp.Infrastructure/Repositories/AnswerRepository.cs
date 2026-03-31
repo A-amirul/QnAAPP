@@ -19,6 +19,18 @@ public class AnswerRepository : IAnswerRepository
         await _db.SaveChangesAsync();
     }
 
+    public async Task<Answer?> GetByIdAsync(int id)
+    {
+        return await _db.Answers.FindAsync(id);
+    }
+
+    public async Task UpdateAsync(Answer a)
+    {
+        a.UpdatedAt = DateTime.Now;
+        _db.Answers.Update(a);
+        await _db.SaveChangesAsync();
+    }
+
     public async Task DeleteAsync(int id)
     {
         var data = await _db.Answers.FindAsync(id);

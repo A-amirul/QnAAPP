@@ -1,0 +1,13 @@
+﻿@model QnAApp.Domain.Entities.Answer
+
+<h3>Edit Answer</h3>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="hidden" name="QuestionId" value="@Model.QuestionId" />
+
+    <textarea name="Content">@Model.Content</textarea>
+
+    <br />
+    <button type="submit">Update</button>
+</form>

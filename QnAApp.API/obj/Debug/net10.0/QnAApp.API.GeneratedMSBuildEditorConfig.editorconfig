@@ -22,8 +22,16 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/QnAApp/QnAApp.API/Views/Answer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5zd2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/QnAApp/QnAApp.API/Views/Answer/_AnswerPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5zd2VyXF9BbnN3ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QnAApp/QnAApp.API/Views/Comment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/QnAApp/QnAApp.API/Views/Comment/_CommentPartial.cshtml]

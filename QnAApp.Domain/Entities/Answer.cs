@@ -9,5 +9,7 @@ public class Answer
     public string UserId { get; set; } = "";
 
     public Question Question { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime? UpdatedAt { get; set; }
     public ICollection<Comment> Comments { get; set; } = new List<Comment>();
 }

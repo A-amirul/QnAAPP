@@ -8,6 +8,7 @@ D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.GeneratedMSBui
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.AssemblyInfoInputs.cache
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.AssemblyInfo.cs
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.csproj.CoreCompileInputs.cache
+D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.sourcelink.json
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.A.59ABF7F1.Up2Date
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\QnAApp.Application.dll
 D:\QnAApp\QnAApp.Application\obj\Debug\net10.0\refint\QnAApp.Application.dll
